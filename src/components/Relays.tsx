@@ -29,7 +29,7 @@ export default function Relays() {
   };
 
   const activeCount = Object.values(relays).filter(
-    (status) => status === 1
+    (status) => status === 0
   ).length;
 
   if (loading) {

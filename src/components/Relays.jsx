@@ -28,7 +28,7 @@ export default function Relays() {
     set(ref(db, `Relays/${id}/status`), val);
   };
 
-  const activeCount = Object.values(relays).filter((status) => status === 1).length;
+  const activeCount = Object.values(relays).filter((status) => status === 0).length;
 
   if (loading) {
     return (
